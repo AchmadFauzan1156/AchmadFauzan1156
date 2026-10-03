@@ -61,8 +61,8 @@ func main() {
 Kalau yang saya kerjakan digambar sebagai jaringan, kira-kira begini. Satu gateway, tiga switch, tiap project punya VLAN sendiri:
 
 ```mermaid
-flowchart TB
-    NET(["☁️ internet"]) --- GW{{"🛜 fauzan · gateway"}}
+flowchart LR
+    GW{{"🛜 fauzan<br/>gateway"}}
 
     GW --- SW1["🔀 switch-kuliah"]
     GW --- SW2["🔀 switch-project"]
@@ -77,7 +77,7 @@ flowchart TB
     end
 
     subgraph V30["VLAN 30 · StudyFlow"]
-        direction LR
+        direction TB
         SFC["📱 client<br/>Kotlin Multiplatform<br/>Android + Desktop"]
         SFA["⚙️ backend<br/>Python · FastAPI"]
         SFD[("PostgreSQL + pgvector<br/>Supabase Auth")]
@@ -88,7 +88,7 @@ flowchart TB
     end
 
     subgraph V40["VLAN 40 · StokAja"]
-        direction LR
+        direction TB
         STF["🛒 frontend<br/>Next.js · React · Tailwind"]
         STB["📦 backend<br/>Express · JWT · Socket.IO"]
         STD[("MongoDB")]
