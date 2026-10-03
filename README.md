@@ -23,7 +23,7 @@
      (|     | )        Kernel    networking + hardware
     /'\_   _/`\        Shell     data processing & software
     \___)=(___/        Uptime    on GitHub since Aug 2024
-                       Packages  Go · Kotlin · C++ · JavaScript
+                       Packages  Go · Kotlin · C++ · JavaScript · Python
                        Motto     pelan-pelan asal konsisten
 ```
 
@@ -58,26 +58,53 @@ func main() {
 
 ## 🗺️ `$ nmap --topology fauzan`
 
-Peta singkat apa saja yang "terhubung" ke saya:
+Kalau yang saya kerjakan digambar sebagai jaringan, kira-kira begini. Satu gateway, tiga switch, tiap project punya VLAN sendiri:
 
 ```mermaid
-flowchart LR
-    ME(("fauzan<br/>gateway"))
+flowchart TB
+    NET(["☁️ internet"]) --- GW{{"🛜 fauzan · gateway"}}
 
-    ME --- NET["🌐 Networking"]
-    ME --- HW["🔧 Hardware"]
-    ME --- SW["💻 Software"]
-    ME --- DATA["📊 Data"]
+    GW --- SW1["🔀 switch-kuliah"]
+    GW --- SW2["🔀 switch-project"]
+    GW --- SW3["🔀 switch-ngoprek"]
 
-    HW --- ESP["ESP32"]
-    SW --- WEB["Web · JavaScript"]
-    SW --- AND["Android · Kotlin"]
-    SW --- GFX["Graphics · C++ / OpenGL"]
-    SW --- GO["Backend · Golang"]
+    subgraph V10["VLAN 10 · Grafika Komputer"]
+        OGL["🎨 OpenGL<br/>C++ · GLFW · GLAD · stb_image<br/>shader, texture, uniform · CMake"]
+    end
 
-    WEB --- STOK["StokAja"]
-    AND --- STUDY["StudyFlow"]
-    GFX --- OGL["OpenGL repo"]
+    subgraph V20["VLAN 20 · Pemrograman Web"]
+        GO["🐹 Golang<br/>net/http · html/template<br/>routing, form, template"]
+    end
+
+    subgraph V30["VLAN 30 · StudyFlow"]
+        direction LR
+        SFC["📱 client<br/>Kotlin Multiplatform<br/>Android + Desktop"]
+        SFA["⚙️ backend<br/>Python · FastAPI"]
+        SFD[("PostgreSQL + pgvector<br/>Supabase Auth")]
+        SFG["✨ Gemini API"]
+        SFC --> SFA
+        SFA --> SFD
+        SFA --> SFG
+    end
+
+    subgraph V40["VLAN 40 · StokAja"]
+        direction LR
+        STF["🛒 frontend<br/>Next.js · React · Tailwind"]
+        STB["📦 backend<br/>Express · JWT · Socket.IO"]
+        STD[("MongoDB")]
+        STF --> STB
+        STB --> STD
+    end
+
+    subgraph V50["VLAN 50 · Lab"]
+        LAB["🔧 networking & hardware<br/>ESP32 · Docker"]
+    end
+
+    SW1 --- V10
+    SW1 --- V20
+    SW2 --- V30
+    SW2 --- V40
+    SW3 --- V50
 ```
 
 <br/>
@@ -96,23 +123,31 @@ PID   TASK                              STATE      NOTE
 
 ## 🧰 `$ ls ~/toolbox`
 
+<p align="center">
+  <img src="assets/go.svg" alt="Go" width="104" />
+  <img src="assets/kotlin.svg" alt="Kotlin" width="104" />
+  <img src="assets/cpp.svg" alt="C++" width="104" />
+  <img src="assets/javascript.svg" alt="JavaScript" width="104" />
+  <img src="assets/python.svg" alt="Python" width="104" />
+</p>
+
 <table>
   <tr>
-    <td width="170"><b>Bahasa</b></td>
+    <td width="170"><b>Web</b></td>
     <td>
-      <img src="https://img.shields.io/badge/Go-0d1117?style=for-the-badge&logo=go&logoColor=00ADD8" alt="Go" />
-      <img src="https://img.shields.io/badge/Kotlin-0d1117?style=for-the-badge&logo=kotlin&logoColor=7F52FF" alt="Kotlin" />
-      <img src="https://img.shields.io/badge/C++-0d1117?style=for-the-badge&logo=cplusplus&logoColor=00599C" alt="C++" />
-      <img src="https://img.shields.io/badge/JavaScript-0d1117?style=for-the-badge&logo=javascript&logoColor=F7DF1E" alt="JavaScript" />
+      <img src="https://img.shields.io/badge/Next.js-0d1117?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js" />
+      <img src="https://img.shields.io/badge/React-0d1117?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
+      <img src="https://img.shields.io/badge/Tailwind-0d1117?style=for-the-badge&logo=tailwindcss&logoColor=06B6D4" alt="Tailwind CSS" />
+      <img src="https://img.shields.io/badge/Express-0d1117?style=for-the-badge&logo=express&logoColor=white" alt="Express" />
+      <img src="https://img.shields.io/badge/FastAPI-0d1117?style=for-the-badge&logo=fastapi&logoColor=009688" alt="FastAPI" />
     </td>
   </tr>
   <tr>
-    <td><b>Web</b></td>
+    <td><b>Data</b></td>
     <td>
-      <img src="https://img.shields.io/badge/Node.js-0d1117?style=for-the-badge&logo=nodedotjs&logoColor=5FA04E" alt="Node.js" />
-      <img src="https://img.shields.io/badge/HTML5-0d1117?style=for-the-badge&logo=html5&logoColor=E34F26" alt="HTML5" />
-      <img src="https://img.shields.io/badge/CSS-0d1117?style=for-the-badge&logo=css&logoColor=663399" alt="CSS" />
-      <img src="https://img.shields.io/badge/Vercel-0d1117?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel" />
+      <img src="https://img.shields.io/badge/PostgreSQL-0d1117?style=for-the-badge&logo=postgresql&logoColor=4169E1" alt="PostgreSQL" />
+      <img src="https://img.shields.io/badge/MongoDB-0d1117?style=for-the-badge&logo=mongodb&logoColor=47A248" alt="MongoDB" />
+      <img src="https://img.shields.io/badge/Supabase-0d1117?style=for-the-badge&logo=supabase&logoColor=3FCF8E" alt="Supabase" />
     </td>
   </tr>
   <tr>
@@ -126,8 +161,10 @@ PID   TASK                              STATE      NOTE
     <td><b>Tools</b></td>
     <td>
       <img src="https://img.shields.io/badge/Git-0d1117?style=for-the-badge&logo=git&logoColor=F05032" alt="Git" />
-      <img src="https://img.shields.io/badge/GitHub-0d1117?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+      <img src="https://img.shields.io/badge/Docker-0d1117?style=for-the-badge&logo=docker&logoColor=2496ED" alt="Docker" />
+      <img src="https://img.shields.io/badge/CMake-0d1117?style=for-the-badge&logo=cmake&logoColor=white" alt="CMake" />
       <img src="https://img.shields.io/badge/Android_Studio-0d1117?style=for-the-badge&logo=androidstudio&logoColor=3DDC84" alt="Android Studio" />
+      <img src="https://img.shields.io/badge/Vercel-0d1117?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel" />
     </td>
   </tr>
 </table>
