@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 104 124" width="104" height="124" role="img" aria-label="Git">
+  <title>Git</title>
+  <style>
+    .icon{transform-box:fill-box;transform-origin:center;animation:float 3s ease-in-out 0.6s infinite}
+    .shadow{transform-box:fill-box;transform-origin:center;animation:shadow 3s ease-in-out 0.6s infinite}
+    .ring{animation:glow 3s ease-in-out 0.6s infinite}
+    @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+    @keyframes shadow{0%,100%{transform:scaleX(1);opacity:.35}50%{transform:scaleX(.7);opacity:.16}}
+    @keyframes glow{0%,100%{stroke-opacity:.25}50%{stroke-opacity:.9}}
+    @media (prefers-reduced-motion:reduce){.icon,.shadow,.ring{animation:none}}
+  </style>
+  <rect x="6" y="6" width="92" height="92" rx="20" fill="#0d1117"/>
+  <rect class="ring" x="6" y="6" width="92" height="92" rx="20" fill="none" stroke="#F05032" stroke-width="1.5"/>
+  <ellipse class="shadow" cx="52" cy="86" rx="18" ry="3" fill="#F05032"/>
+  <g transform="translate(28 26) scale(2)"><g class="icon"><path fill="#F05032" d="M13.09 23.549a1.54 1.54 0 0 1-2.18 0L.451 13.089a1.54 1.54 0 0 1 0-2.179l7.191-7.19 2.733 2.733a1.85 1.85 0 0 0 .964 2.326v6.66a1.849 1.849 0 1 0 1.54 0V8.957l2.508 2.508a1.85 1.85 0 1 0 1.09-1.09l-2.634-2.634a1.85 1.85 0 0 0-2.378-2.377L8.73 2.63 10.91.451a1.54 1.54 0 0 1 2.179 0l10.459 10.46a1.54 1.54 0 0 1 0 2.179z"/></g></g>
+  <text x="52" y="117" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11" fill="#8b949e">Git</text>
+</svg>

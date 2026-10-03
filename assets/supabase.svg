@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 104 124" width="104" height="124" role="img" aria-label="Supabase">
+  <title>Supabase</title>
+  <style>
+    .icon{transform-box:fill-box;transform-origin:center;animation:float 3s ease-in-out 0.6s infinite}
+    .shadow{transform-box:fill-box;transform-origin:center;animation:shadow 3s ease-in-out 0.6s infinite}
+    .ring{animation:glow 3s ease-in-out 0.6s infinite}
+    @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+    @keyframes shadow{0%,100%{transform:scaleX(1);opacity:.35}50%{transform:scaleX(.7);opacity:.16}}
+    @keyframes glow{0%,100%{stroke-opacity:.25}50%{stroke-opacity:.9}}
+    @media (prefers-reduced-motion:reduce){.icon,.shadow,.ring{animation:none}}
+  </style>
+  <rect x="6" y="6" width="92" height="92" rx="20" fill="#0d1117"/>
+  <rect class="ring" x="6" y="6" width="92" height="92" rx="20" fill="none" stroke="#3FCF8E" stroke-width="1.5"/>
+  <ellipse class="shadow" cx="52" cy="86" rx="18" ry="3" fill="#3FCF8E"/>
+  <g transform="translate(28 26) scale(2)"><g class="icon"><path fill="#3FCF8E" d="M11.9 1.036c-.015-.986-1.26-1.41-1.874-.637L.764 12.05C-.33 13.427.65 15.455 2.409 15.455h9.579l.113 7.51c.014.985 1.259 1.408 1.873.636l9.262-11.653c1.093-1.375.113-3.403-1.645-3.403h-9.642z"/></g></g>
+  <text x="52" y="117" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11" fill="#8b949e">Supabase</text>
+</svg>

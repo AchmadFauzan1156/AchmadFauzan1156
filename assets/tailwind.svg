@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 104 124" width="104" height="124" role="img" aria-label="Tailwind">
+  <title>Tailwind</title>
+  <style>
+    .icon{transform-box:fill-box;transform-origin:center;animation:float 3s ease-in-out 0.6s infinite}
+    .shadow{transform-box:fill-box;transform-origin:center;animation:shadow 3s ease-in-out 0.6s infinite}
+    .ring{animation:glow 3s ease-in-out 0.6s infinite}
+    @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+    @keyframes shadow{0%,100%{transform:scaleX(1);opacity:.35}50%{transform:scaleX(.7);opacity:.16}}
+    @keyframes glow{0%,100%{stroke-opacity:.25}50%{stroke-opacity:.9}}
+    @media (prefers-reduced-motion:reduce){.icon,.shadow,.ring{animation:none}}
+  </style>
+  <rect x="6" y="6" width="92" height="92" rx="20" fill="#0d1117"/>
+  <rect class="ring" x="6" y="6" width="92" height="92" rx="20" fill="none" stroke="#06B6D4" stroke-width="1.5"/>
+  <ellipse class="shadow" cx="52" cy="86" rx="18" ry="3" fill="#06B6D4"/>
+  <g transform="translate(28 26) scale(2)"><g class="icon"><path fill="#06B6D4" d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C10.337,13.382,8.976,12,6.001,12z"/></g></g>
+  <text x="52" y="117" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11" fill="#8b949e">Tailwind</text>
+</svg>

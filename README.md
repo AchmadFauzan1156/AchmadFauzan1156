@@ -123,51 +123,64 @@ PID   TASK                              STATE      NOTE
 
 ## 🧰 `$ ls ~/toolbox`
 
+<p align="center"><b>Bahasa</b></p>
+
 <p align="center">
-  <img src="assets/go.svg" alt="Go" width="104" />
-  <img src="assets/kotlin.svg" alt="Kotlin" width="104" />
-  <img src="assets/cpp.svg" alt="C++" width="104" />
-  <img src="assets/javascript.svg" alt="JavaScript" width="104" />
-  <img src="assets/python.svg" alt="Python" width="104" />
+  <img src="assets/go.svg" alt="Go" width="92" />
+  <img src="assets/kotlin.svg" alt="Kotlin" width="92" />
+  <img src="assets/cpp.svg" alt="C++" width="92" />
+  <img src="assets/javascript.svg" alt="JavaScript" width="92" />
+  <img src="assets/python.svg" alt="Python" width="92" />
 </p>
 
-<table>
-  <tr>
-    <td width="170"><b>Web</b></td>
-    <td>
-      <img src="https://img.shields.io/badge/Next.js-0d1117?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js" />
-      <img src="https://img.shields.io/badge/React-0d1117?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
-      <img src="https://img.shields.io/badge/Tailwind-0d1117?style=for-the-badge&logo=tailwindcss&logoColor=06B6D4" alt="Tailwind CSS" />
-      <img src="https://img.shields.io/badge/Express-0d1117?style=for-the-badge&logo=express&logoColor=white" alt="Express" />
-      <img src="https://img.shields.io/badge/FastAPI-0d1117?style=for-the-badge&logo=fastapi&logoColor=009688" alt="FastAPI" />
-    </td>
-  </tr>
-  <tr>
-    <td><b>Data</b></td>
-    <td>
-      <img src="https://img.shields.io/badge/PostgreSQL-0d1117?style=for-the-badge&logo=postgresql&logoColor=4169E1" alt="PostgreSQL" />
-      <img src="https://img.shields.io/badge/MongoDB-0d1117?style=for-the-badge&logo=mongodb&logoColor=47A248" alt="MongoDB" />
-      <img src="https://img.shields.io/badge/Supabase-0d1117?style=for-the-badge&logo=supabase&logoColor=3FCF8E" alt="Supabase" />
-    </td>
-  </tr>
-  <tr>
-    <td><b>Hardware & Grafis</b></td>
-    <td>
-      <img src="https://img.shields.io/badge/ESP32-0d1117?style=for-the-badge&logo=espressif&logoColor=E7352C" alt="ESP32" />
-      <img src="https://img.shields.io/badge/OpenGL-0d1117?style=for-the-badge&logo=opengl&logoColor=5586A4" alt="OpenGL" />
-    </td>
-  </tr>
-  <tr>
-    <td><b>Tools</b></td>
-    <td>
-      <img src="https://img.shields.io/badge/Git-0d1117?style=for-the-badge&logo=git&logoColor=F05032" alt="Git" />
-      <img src="https://img.shields.io/badge/Docker-0d1117?style=for-the-badge&logo=docker&logoColor=2496ED" alt="Docker" />
-      <img src="https://img.shields.io/badge/CMake-0d1117?style=for-the-badge&logo=cmake&logoColor=white" alt="CMake" />
-      <img src="https://img.shields.io/badge/Android_Studio-0d1117?style=for-the-badge&logo=androidstudio&logoColor=3DDC84" alt="Android Studio" />
-      <img src="https://img.shields.io/badge/Vercel-0d1117?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel" />
-    </td>
-  </tr>
-</table>
+<p align="center"><b>Web</b></p>
+
+<p align="center">
+  <img src="assets/nextjs.svg" alt="Next.js" width="92" />
+  <img src="assets/react.svg" alt="React" width="92" />
+  <img src="assets/tailwind.svg" alt="Tailwind" width="92" />
+  <img src="assets/express.svg" alt="Express" width="92" />
+  <img src="assets/fastapi.svg" alt="FastAPI" width="92" />
+</p>
+
+<p align="center"><b>Data</b></p>
+
+<p align="center">
+  <img src="assets/postgresql.svg" alt="PostgreSQL" width="92" />
+  <img src="assets/mongodb.svg" alt="MongoDB" width="92" />
+  <img src="assets/supabase.svg" alt="Supabase" width="92" />
+</p>
+
+<p align="center"><b>Hardware &amp; Grafis</b></p>
+
+<p align="center">
+  <img src="assets/esp32.svg" alt="ESP32" width="92" />
+  <img src="assets/arduino.svg" alt="Arduino IDE" width="92" />
+  <img src="assets/opengl.svg" alt="OpenGL" width="92" />
+</p>
+
+<p align="center"><b>AI</b></p>
+
+<p align="center">
+  <img src="assets/claude.svg" alt="Claude" width="92" />
+  <img src="assets/claude-code.svg" alt="Claude Code" width="92" />
+  <img src="assets/gemini.svg" alt="Gemini" width="92" />
+  <img src="assets/chatgpt.svg" alt="ChatGPT" width="92" />
+  <img src="assets/codex.svg" alt="Codex" width="92" />
+  <img src="assets/cursor.svg" alt="Cursor" width="92" />
+  <img src="assets/antigravity.svg" alt="Antigravity" width="92" />
+</p>
+
+<p align="center"><b>Editor &amp; Tools</b></p>
+
+<p align="center">
+  <img src="assets/android-studio.svg" alt="Android Studio" width="92" />
+  <img src="assets/notepad.svg" alt="Notepad" width="92" />
+  <img src="assets/git.svg" alt="Git" width="92" />
+  <img src="assets/docker.svg" alt="Docker" width="92" />
+  <img src="assets/cmake.svg" alt="CMake" width="92" />
+  <img src="assets/vercel.svg" alt="Vercel" width="92" />
+</p>
 
 <br/>
 

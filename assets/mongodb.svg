@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 104 124" width="104" height="124" role="img" aria-label="MongoDB">
+  <title>MongoDB</title>
+  <style>
+    .icon{transform-box:fill-box;transform-origin:center;animation:float 3s ease-in-out 0.3s infinite}
+    .shadow{transform-box:fill-box;transform-origin:center;animation:shadow 3s ease-in-out 0.3s infinite}
+    .ring{animation:glow 3s ease-in-out 0.3s infinite}
+    @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+    @keyframes shadow{0%,100%{transform:scaleX(1);opacity:.35}50%{transform:scaleX(.7);opacity:.16}}
+    @keyframes glow{0%,100%{stroke-opacity:.25}50%{stroke-opacity:.9}}
+    @media (prefers-reduced-motion:reduce){.icon,.shadow,.ring{animation:none}}
+  </style>
+  <rect x="6" y="6" width="92" height="92" rx="20" fill="#0d1117"/>
+  <rect class="ring" x="6" y="6" width="92" height="92" rx="20" fill="none" stroke="#47A248" stroke-width="1.5"/>
+  <ellipse class="shadow" cx="52" cy="86" rx="18" ry="3" fill="#47A248"/>
+  <g transform="translate(28 26) scale(2)"><g class="icon"><path fill="#47A248" d="M17.193 9.555c-1.264-5.58-4.252-7.414-4.573-8.115-.28-.394-.53-.954-.735-1.44-.036.495-.055.685-.523 1.184-.723.566-4.438 3.682-4.74 10.02-.282 5.912 4.27 9.435 4.888 9.884l.07.05A73.49 73.49 0 0111.91 24h.481c.114-1.032.284-2.056.51-3.07.417-.296.604-.463.85-.693a11.342 11.342 0 003.639-8.464c.01-.814-.103-1.662-.197-2.218zm-5.336 8.195s0-8.291.275-8.29c.213 0 .49 10.695.49 10.695-.381-.045-.765-1.76-.765-2.405z"/></g></g>
+  <text x="52" y="117" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11" fill="#8b949e">MongoDB</text>
+</svg>
