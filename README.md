@@ -49,7 +49,7 @@ func main() {
     for me.IsCurious() {
         me.Learn()
         me.Build()
-        me.Ngopi() // wajib, bukan opsional
+        me.Ngeteh() // wajib, bukan opsional
     }
 }
 ```
